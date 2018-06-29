@@ -17,7 +17,7 @@
   <label>Landmarks</label>
 
   <% Landmark.all.each do |landmark| %>
-    <input id="landmark_<%= landmark.id %>" type="checkbox" name="figure[landmark_ids][]" value="<%= landmark.id %>">
+    <input id="landmark_<%= landmark.id %>" type="checkbox" name="figure[landmark_ids][]" value="<%= landmark.name %>">
   <% end %></br>
 
   <label>Create New Landmark:</label></br>
