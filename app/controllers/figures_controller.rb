@@ -51,6 +51,6 @@ class FiguresController < ApplicationController
 
   post '/figures/:id' do
     @figure = Figure.find_by(id: "#{params[:id]}")
-    erb :'/figures/index'
+    redirect("/figures/#{@figure.id}")
   end
 end
