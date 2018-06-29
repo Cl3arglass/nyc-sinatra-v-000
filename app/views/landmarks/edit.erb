@@ -1,5 +1,7 @@
 <h1>Edit Landmark</h1>
 
+<h1><%= @landmark.year_completed %></h1>
+
 <form class="" action="/landmarks/<%=@landmark.id%>" method="post">
   <input type="hidden" name="_method" value="PATCH">
 
